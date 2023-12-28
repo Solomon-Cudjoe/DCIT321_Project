@@ -1,8 +1,11 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { Button, Img, Text } from "components";
 
 const Footer = (props) => {
+  const navigate = useNavigate(); // Initialize useNavigate
   return (
     <>
       <footer className={props.className}>
@@ -92,6 +95,7 @@ const Footer = (props) => {
               </Text>
               <Text
                 className="mt-[35px] text-gray-300 text-xl"
+                onClick={() => navigate("/Homepage")}
                 size="txtPoppinsRegular20Gray300"
               >
                 Menu
@@ -158,13 +162,13 @@ const Footer = (props) => {
                 className="mt-[31px] text-gray-300 text-xl"
                 size="txtPoppinsRegular20Gray300"
               >
-                delizioso@gmail.com
+                lottemarie77@gmail.com
               </Text>
               <Text
                 className="mt-8 text-gray-300 text-xl"
                 size="txtPoppinsRegular20Gray300"
               >
-                +123 4567 8901
+                +233549684848
               </Text>
             </div>
           </div>
@@ -173,19 +177,21 @@ const Footer = (props) => {
               className="mt-1 text-gray-301 text-xl"
               size="txtPoppinsRegular20Gray301"
             >
-              Copyright
+              Developed 
             </Text>
+            " "
             <Text
-              className="border-[1.5px] border-gray-301 border-solid flex h-[19px] items-center justify-center ml-[5px] mt-1 rounded-[50%] text-center text-gray-301 text-sm w-[19px]"
-              size="txtPoppinsRegular14Gray301"
+              className="mt-1 text-gray-301 text-xl"
+              size="txtPoppinsRegular20Gray301"
             >
-              c
+              by
             </Text>
+            " "
             <Text
               className="ml-[5px] text-gray-301 text-xl"
               size="txtPoppinsRegular20Gray301"
             >
-              2022 Foodio
+              ByteForce
             </Text>
           </div>
         </div>
