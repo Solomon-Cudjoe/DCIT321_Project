@@ -172,32 +172,8 @@ const Footer = (props) => {
               </Text>
             </div>
           </div>
-<<<<<<< HEAD
-          <div className="copyRigt">
+          <div className="copyRight">
             <p>&copy; 2023</p>
-=======
-          <div className="flex flex-row items-start justify-center w-[23%] md:w-full">
-            <Text
-              className="mt-1 text-gray-301 text-xl"
-              size="txtPoppinsRegular20Gray301"
-            >
-              Developed 
-            </Text>
-            " "
-            <Text
-              className="mt-1 text-gray-301 text-xl"
-              size="txtPoppinsRegular20Gray301"
-            >
-              by
-            </Text>
-            " "
-            <Text
-              className="ml-[5px] text-gray-301 text-xl"
-              size="txtPoppinsRegular20Gray301"
-            >
-              ByteForce
-            </Text>
->>>>>>> a24cbbc0cf2bed37a671018f570c63a196fa584e
           </div>
         </div>
       </footer>
