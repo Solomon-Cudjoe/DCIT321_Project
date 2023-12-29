@@ -315,6 +315,8 @@ const HomepagePage = () => {
                       src="images/img_pngitem41084.png"
                       alt="PngItem41084"
                     />
+
+
                     <div className="flex flex-col items-center justify-end mb-1.5 pt-[17px] w-full">
                       <div className="flex flex-col gap-[18px] items-center justify-start w-full">
                         <Text
@@ -327,14 +329,13 @@ const HomepagePage = () => {
                           className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
                           size="txtPoppinsRegular14"
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Egestas consequat mi eget auctor aliquam, diam.{" "}
+                          A beloved classic, spaghetti consists of long, slender pasta strands cooked to perfection and commonly paired with a variety of sauces, such as marinara, Bolognese, or garlic and olive oil. This versatile dish caters to a wide range of taste preferences, making it a timeless favorite..{" "}
                         </Text>
                       </div>
                       <div className="flex flex-row items-center justify-center mt-3.5 rounded-[1.76px] w-[49%] md:w-full">
                         <RatingBar
                           className="flex justify-between w-[140px]"
-                          value={5}
+                          value={4.5}
                           starCount={5}
                           activeColor="#f54748"
                           size={24}
@@ -345,7 +346,7 @@ const HomepagePage = () => {
                           className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                           size="txtPoppinsSemiBold25"
                         >
-                          $12.05
+                          GHc35.00
                         </Text>
                         <Button
                           className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -377,14 +378,13 @@ const HomepagePage = () => {
                           className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
                           size="txtPoppinsRegular14"
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Egestas consequat mi eget auctor aliquam, diam.{" "}
+                          Soft and pillowy potato dumplings, gnocchi are a comforting Italian pasta alternative. These little delights are typically served with various sauces, from rich and hearty tomato-based options to light herb-infused alternatives, providing a versatile and satisfying dining experience.{" "}
                         </Text>
                       </div>
                       <div className="flex flex-row items-center justify-center mt-3.5 rounded-[1.76px] w-[49%] md:w-full">
                         <RatingBar
                           className="flex justify-between w-[140px]"
-                          value={5}
+                          value={4}
                           starCount={5}
                           activeColor="#f54748"
                           size={24}
@@ -395,7 +395,7 @@ const HomepagePage = () => {
                           className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                           size="txtPoppinsSemiBold25"
                         >
-                          $12.05
+                          GHc35.00
                         </Text>
                         <Button
                           className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -421,14 +421,13 @@ const HomepagePage = () => {
                           className="text-3xl sm:text-[26px] md:text-[28px] text-gray-900"
                           size="txtPoppinsSemiBold30"
                         >
-                          Rovioli
+                          Ravioli
                         </Text>
                         <Text
                           className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
                           size="txtPoppinsRegular14"
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Egestas consequat mi eget auctor aliquam, diam.{" "}
+                          These delectable pasta parcels are filled with a variety of savory ingredients, such as cheese, meat, or vegetables, and enveloped in thin pasta dough. Ravioli is typically served with a flavorful sauce, delivering a delightful burst of flavors in every bite.{" "}
                         </Text>
                       </div>
                       <div className="flex flex-row items-center justify-center mt-3.5 rounded-[1.76px] w-[49%] md:w-full">
@@ -445,7 +444,7 @@ const HomepagePage = () => {
                           className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                           size="txtPoppinsSemiBold25"
                         >
-                          $12.05
+                          GHc35.99
                         </Text>
                         <Button
                           className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -459,6 +458,12 @@ const HomepagePage = () => {
                       </div>
                     </div>
                   </div>
+
+
+                  
+
+                 
+
                   <div className="bg-white-A700 flex flex-1 flex-col gap-6 items-center justify-center p-[30px] sm:px-5 rounded-[40px] w-full">
                     <Img
                       className="h-[270px] md:h-auto mt-1.5 object-cover w-[95%]"
@@ -471,14 +476,13 @@ const HomepagePage = () => {
                           className="text-3xl sm:text-[26px] md:text-[28px] text-gray-900"
                           size="txtPoppinsSemiBold30"
                         >
-                          Penne Alla Vodak
+                          Penne Alla Vodka
                         </Text>
                         <Text
                           className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
                           size="txtPoppinsRegular14"
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Egestas consequat mi eget auctor aliquam, diam.{" "}
+                          A mouthwatering Italian dish, penne alla vodka features al dente penne pasta smothered in a creamy tomato and vodka-infused sauce. The dish is often garnished with fresh herbs, creating a harmonious blend of textures and flavors.{" "}
                         </Text>
                       </div>
                       <div className="flex flex-row items-center justify-center mt-3.5 rounded-[1.76px] w-[49%] md:w-full">
@@ -495,7 +499,7 @@ const HomepagePage = () => {
                           className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                           size="txtPoppinsSemiBold25"
                         >
-                          $12.05
+                          GHc38.90
                         </Text>
                         <Button
                           className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -509,6 +513,9 @@ const HomepagePage = () => {
                       </div>
                     </div>
                   </div>
+
+
+
                   <div className="bg-white-A700 flex flex-1 flex-col gap-6 items-center justify-center p-[30px] sm:px-5 rounded-[40px] w-full">
                     <Img
                       className="h-[270px] md:h-auto mt-1.5 object-cover w-[270px]"
@@ -521,14 +528,13 @@ const HomepagePage = () => {
                           className="text-3xl sm:text-[26px] md:text-[28px] text-gray-900"
                           size="txtPoppinsSemiBold30"
                         >
-                          Risoto
+                          Pepperoni Pizza
                         </Text>
                         <Text
                           className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
                           size="txtPoppinsRegular14"
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Egestas consequat mi eget auctor aliquam, diam.{" "}
+                          A classic favorite, pepperoni pizza boasts a thin, crispy crust topped with rich tomato sauce, gooey mozzarella cheese, and savory slices of pepperoni, creating a delicious and timeless combination loved by pizza enthusiasts worldwide.{" "}
                         </Text>
                       </div>
                       <div className="flex flex-row items-center justify-center mt-3.5 rounded-[1.76px] w-[49%] md:w-full">
@@ -545,7 +551,7 @@ const HomepagePage = () => {
                           className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                           size="txtPoppinsSemiBold25"
                         >
-                          $12.05
+                          GHc45.00
                         </Text>
                         <Button
                           className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -571,14 +577,13 @@ const HomepagePage = () => {
                           className="text-3xl sm:text-[26px] md:text-[28px] text-gray-900"
                           size="txtPoppinsSemiBold30"
                         >
-                          Splitza Signature
+                          Vegan Pizza
                         </Text>
                         <Text
                           className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
                           size="txtPoppinsRegular14"
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Egestas consequat mi eget auctor aliquam, diam.{" "}
+                          A plant-based twist on the traditional pizza, vegan pizza features a cruelty-free crust loaded with vibrant vegetables, vegan cheese, and flavorful plant-based toppings, providing a tasty and compassionate alternative for those seeking a meat-free pizza experience.{" "}
                         </Text>
                       </div>
                       <div className="flex flex-row items-center justify-center mt-3.5 rounded-[1.76px] w-[49%] md:w-full">
@@ -595,7 +600,7 @@ const HomepagePage = () => {
                           className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                           size="txtPoppinsSemiBold25"
                         >
-                          $12.05
+                          GHc55.00
                         </Text>
                         <Button
                           className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
