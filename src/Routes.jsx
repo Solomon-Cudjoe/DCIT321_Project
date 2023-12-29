@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotFound from "pages/NotFound";
 import Register from "pages/Auth/register";
 import Login from "pages/Auth/login";
+import Dinner from "pages/Categories/dinner";
 const Homepage = React.lazy(() => import("pages/Homepage"));
 const Checkout = React.lazy(() => import("pages/Checkout"));
 const Orderonline = React.lazy(() => import("pages/Orderonline"));
@@ -26,6 +27,7 @@ const ProjectRoutes = () => {
           <Route path="/" element={<Homepage />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/dinner" element={<Dinner />} />
         </Routes>
       </Router>
     </React.Suspense>

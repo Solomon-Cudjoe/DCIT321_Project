@@ -5,7 +5,7 @@ import { Button, Img, Text } from "components";
 const Footer = (props) => {
   return (
     <>
-      <footer className={props.className}>
+      <footer className="footer">
         <div className="flex flex-col md:gap-10 gap-[67px] items-center justify-center mb-[76px] mt-[70px] mx-auto w-[78%]">
           <div className="flex md:flex-col flex-row md:gap-5 items-start justify-evenly w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start mb-2 w-[38%] md:w-full">
@@ -149,7 +149,7 @@ const Footer = (props) => {
                 Get in touch
               </Text>
               <Text
-                className="leading-[153.00%] mt-[46px] text-gray-300 text-xl w-full"
+                className="leading-[153.00%] mt-[46px] text-white text-xl w-full"
                 size="txtPoppinsRegular20Gray300"
               >
                 3247 Johnson Ave, Bronx, NY 10463, Amerika Serikat
@@ -168,25 +168,8 @@ const Footer = (props) => {
               </Text>
             </div>
           </div>
-          <div className="flex flex-row items-start justify-center w-[23%] md:w-full">
-            <Text
-              className="mt-1 text-gray-301 text-xl"
-              size="txtPoppinsRegular20Gray301"
-            >
-              Copyright
-            </Text>
-            <Text
-              className="border-[1.5px] border-gray-301 border-solid flex h-[19px] items-center justify-center ml-[5px] mt-1 rounded-[50%] text-center text-gray-301 text-sm w-[19px]"
-              size="txtPoppinsRegular14Gray301"
-            >
-              c
-            </Text>
-            <Text
-              className="ml-[5px] text-gray-301 text-xl"
-              size="txtPoppinsRegular20Gray301"
-            >
-              2022 Foodio
-            </Text>
+          <div className="copyRigt">
+            <p>&copy; 2023</p>
           </div>
         </div>
       </footer>
