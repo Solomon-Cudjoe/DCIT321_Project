@@ -1,6 +1,7 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 import {
   Button,
@@ -19,6 +20,1074 @@ const HomepagePage = () => {
 
   const sliderRef = React.useRef(null);
   const [sliderState, setsliderState] = React.useState(0);
+
+  const MenuSwitcher = () => {
+    const [currentCategory, setCurrentCategory] = useState("All Categories");
+
+    const switchMenu = () => {
+      switch (currentCategory) {
+        case "All Categories":
+          setCurrentCategory("Dinner");
+          break;
+        case "Dinner":
+          setCurrentCategory("Lunch");
+          break;
+        case "Lunch":
+          setCurrentCategory("Dessert");
+          break;
+        case "Dessert":
+          setCurrentCategory("Drinks");
+          break;
+        case "Drinks":
+          setCurrentCategory("All Categories");
+          break;
+        default:
+          setCurrentCategory("All Categories");
+      }
+    };
+
+    return (
+      <div className="main-container">
+        <h2 className="main-headings">{`${currentCategory
+          .charAt(0)
+          .toUpperCase()}${currentCategory.slice(1)} `}</h2>
+
+        <>
+          {currentCategory === "All Categories" && (
+            <div className="bg-gray-50 flex flex-col font-poppins items-center justify-start mx-auto w-full">
+              <h1 className="cat-heading">All Categories</h1>
+              <div className="Container">
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {currentCategory === "Dinner" && (
+            <div className="bg-gray-50 flex flex-col font-poppins items-center justify-start mx-auto w-full">
+              <h1 className="Heading">
+                our dinner{" "}
+                <span
+                  className="text-red-400 font-opensans text-left font-bold"
+                  id="heading-span"
+                >
+                  dishes
+                </span>{" "}
+              </h1>
+              <div className="Container">
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {currentCategory === "Lunch" && (
+            <div className="bg-gray-50 flex flex-col font-poppins items-center justify-start mx-auto w-full">
+              <h1 className="Heading">
+                our lunch{" "}
+                <span
+                  className="text-red-400 font-opensans text-left font-bold"
+                  id="heading-span"
+                >
+                  dishes
+                </span>{" "}
+              </h1>
+              <div className="Container">
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {currentCategory === "Dessert" && (
+            <div className="bg-gray-50 flex flex-col font-poppins items-center justify-start mx-auto w-full">
+              <h1 className="Heading">
+                our dessert{" "}
+                <span
+                  className="text-red-400 font-opensans text-left font-bold"
+                  id="heading-span"
+                >
+                  dishes
+                </span>{" "}
+              </h1>
+              <div className="Container">
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {currentCategory === "Drinks" && (
+            <div className="bg-gray-50 flex flex-col font-poppins items-center justify-start mx-auto w-full">
+              <h1 className="Heading">
+                our available{" "}
+                <span
+                  className="text-red-400 font-opensans text-left font-bold"
+                  id="heading-span"
+                >
+                  drinks
+                </span>{" "}
+              </h1>
+              <div className="Container">
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="dinner-Container">
+                  <div className="item-container">
+                    <img
+                      src={require("FoodImages/IMG-20231227-WA0004.jpg")}
+                      alt=""
+                    />
+                    <p className="name">Rice</p>
+                    <span className="leading-[200.00%] text-center text-gray-800 text-sm w-full">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Egestas consequat mi eget auctor aliquam, diam.
+                    </span>
+                    <RatingBar
+                      className="RatingBar"
+                      value={5}
+                      starCount={5}
+                      activeColor="#f54748"
+                      size={24}
+                    ></RatingBar>
+                    <p className="price">$25</p>
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-center text-sm"
+                      shape="round"
+                      color="red_400"
+                      size="sm"
+                      variant="fill"
+                      onClick={() => navigate("/login")}
+                    >
+                      Add To Cart
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </>
+
+        <button className="switch-btn" onClick={switchMenu}>
+          {" "}
+          {currentCategory === "All Categories" ? "Dinner" : currentCategory}
+        </button>
+      </div>
+    );
+  };
 
   return (
     <>
@@ -254,9 +1323,10 @@ const HomepagePage = () => {
         <div className="flex flex-col font-opensans md:gap-10 gap-[79px] items-center justify-start max-w-[1112px] mt-[133px] mx-auto md:px-5 w-full">
           <Text
             className="sm:text-[38px] md:text-[44px] text-[52px] text-gray-900"
+            id="popular-heading"
             size="txtOpenSansRomanBold52"
           >
-            Our Popular Menu
+            Our Popular <span>Menu</span>
           </Text>
           <div className="flex flex-col font-poppins gap-[50px] items-center justify-start w-full">
             <div className="flex sm:flex-col flex-row gap-7 items-center justify-between rounded-[16px] w-full">
@@ -315,8 +1385,6 @@ const HomepagePage = () => {
                       src="images/img_pngitem41084.png"
                       alt="PngItem41084"
                     />
-
-
                     <div className="flex flex-col items-center justify-end mb-1.5 pt-[17px] w-full">
                       <div className="flex flex-col gap-[18px] items-center justify-start w-full">
                         <Text
@@ -329,13 +1397,14 @@ const HomepagePage = () => {
                           className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
                           size="txtPoppinsRegular14"
                         >
-                          A beloved classic, spaghetti consists of long, slender pasta strands cooked to perfection and commonly paired with a variety of sauces, such as marinara, Bolognese, or garlic and olive oil. This versatile dish caters to a wide range of taste preferences, making it a timeless favorite..{" "}
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Egestas consequat mi eget auctor aliquam, diam.{" "}
                         </Text>
                       </div>
                       <div className="flex flex-row items-center justify-center mt-3.5 rounded-[1.76px] w-[49%] md:w-full">
                         <RatingBar
                           className="flex justify-between w-[140px]"
-                          value={4.5}
+                          value={5}
                           starCount={5}
                           activeColor="#f54748"
                           size={24}
@@ -346,7 +1415,7 @@ const HomepagePage = () => {
                           className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                           size="txtPoppinsSemiBold25"
                         >
-                          GHc35.00
+                          $12.05
                         </Text>
                         <Button
                           className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -378,13 +1447,14 @@ const HomepagePage = () => {
                           className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
                           size="txtPoppinsRegular14"
                         >
-                          Soft and pillowy potato dumplings, gnocchi are a comforting Italian pasta alternative. These little delights are typically served with various sauces, from rich and hearty tomato-based options to light herb-infused alternatives, providing a versatile and satisfying dining experience.{" "}
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Egestas consequat mi eget auctor aliquam, diam.{" "}
                         </Text>
                       </div>
                       <div className="flex flex-row items-center justify-center mt-3.5 rounded-[1.76px] w-[49%] md:w-full">
                         <RatingBar
                           className="flex justify-between w-[140px]"
-                          value={4}
+                          value={5}
                           starCount={5}
                           activeColor="#f54748"
                           size={24}
@@ -395,7 +1465,7 @@ const HomepagePage = () => {
                           className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                           size="txtPoppinsSemiBold25"
                         >
-                          GHc35.00
+                          $12.05
                         </Text>
                         <Button
                           className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -421,13 +1491,14 @@ const HomepagePage = () => {
                           className="text-3xl sm:text-[26px] md:text-[28px] text-gray-900"
                           size="txtPoppinsSemiBold30"
                         >
-                          Ravioli
+                          Rovioli
                         </Text>
                         <Text
                           className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
                           size="txtPoppinsRegular14"
                         >
-                          These delectable pasta parcels are filled with a variety of savory ingredients, such as cheese, meat, or vegetables, and enveloped in thin pasta dough. Ravioli is typically served with a flavorful sauce, delivering a delightful burst of flavors in every bite.{" "}
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Egestas consequat mi eget auctor aliquam, diam.{" "}
                         </Text>
                       </div>
                       <div className="flex flex-row items-center justify-center mt-3.5 rounded-[1.76px] w-[49%] md:w-full">
@@ -444,7 +1515,7 @@ const HomepagePage = () => {
                           className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                           size="txtPoppinsSemiBold25"
                         >
-                          GHc35.99
+                          $12.05
                         </Text>
                         <Button
                           className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -458,12 +1529,6 @@ const HomepagePage = () => {
                       </div>
                     </div>
                   </div>
-
-
-                  
-
-                 
-
                   <div className="bg-white-A700 flex flex-1 flex-col gap-6 items-center justify-center p-[30px] sm:px-5 rounded-[40px] w-full">
                     <Img
                       className="h-[270px] md:h-auto mt-1.5 object-cover w-[95%]"
@@ -482,7 +1547,7 @@ const HomepagePage = () => {
                           className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
                           size="txtPoppinsRegular14"
                         >
-                          A mouthwatering Italian dish, penne alla vodka features al dente penne pasta smothered in a creamy tomato and vodka-infused sauce. The dish is often garnished with fresh herbs, creating a harmonious blend of textures and flavors.{" "}
+                          A classic favorite, pepperoni pizza boasts a thin, crispy crust topped with rich tomato sauce, gooey mozzarella cheese, and savory slices of pepperoni, creating a delicious and timeless combination loved by pizza enthusiasts worldwide.{" "}
                         </Text>
                       </div>
                       <div className="flex flex-row items-center justify-center mt-3.5 rounded-[1.76px] w-[49%] md:w-full">
@@ -499,7 +1564,7 @@ const HomepagePage = () => {
                           className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                           size="txtPoppinsSemiBold25"
                         >
-                          GHc38.90
+                          $12.05
                         </Text>
                         <Button
                           className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -513,9 +1578,6 @@ const HomepagePage = () => {
                       </div>
                     </div>
                   </div>
-
-
-
                   <div className="bg-white-A700 flex flex-1 flex-col gap-6 items-center justify-center p-[30px] sm:px-5 rounded-[40px] w-full">
                     <Img
                       className="h-[270px] md:h-auto mt-1.5 object-cover w-[270px]"
@@ -528,7 +1590,7 @@ const HomepagePage = () => {
                           className="text-3xl sm:text-[26px] md:text-[28px] text-gray-900"
                           size="txtPoppinsSemiBold30"
                         >
-                          Pepperoni Pizza
+                          Risoto
                         </Text>
                         <Text
                           className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
@@ -600,7 +1662,7 @@ const HomepagePage = () => {
                           className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                           size="txtPoppinsSemiBold25"
                         >
-                          GHc55.00
+                          $12.05
                         </Text>
                         <Button
                           className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -759,7 +1821,7 @@ const HomepagePage = () => {
               What Our Customers Say
             </Text>
           </div>
-          <div className="h-[394px] relative w-full">
+          {/* <div className="h-[394px] relative w-full">
             <PagerIndicator
               className="absolute flex h-[394px] inset-[0] justify-center m-auto max-w-[728px] w-full"
               count={3}
@@ -799,7 +1861,7 @@ const HomepagePage = () => {
               />
             </Button>
             <div className="absolute inset-[0] justify-center m-auto w-full"></div>
-          </div>
+          </div> */}
         </div>
         <div className="bg-red-100 flex flex-col font-opensans items-center justify-end max-w-[1112px] mt-[120px] mx-auto p-[93px] md:px-5 rounded-[24px] w-full">
           <div className="flex flex-col gap-12 items-center justify-start mt-[17px] w-[77%] md:w-full">
@@ -838,5 +1900,84 @@ const HomepagePage = () => {
     </>
   );
 };
+
+const MenuSwitcher = () => {
+  const [currentCategory, setCurrentCategory] = useState(
+    "AllCategory",
+    "Dinner",
+    "Lunch",
+    "Dessert",
+    "Drinks"
+  );
+
+  const switchMenu = () => {
+    switch (currentCategory) {
+      case "AllCategory":
+        setCurrentCategory("Dinner");
+        break;
+      case "Dinner":
+        setCurrentCategory("Lunch");
+        break;
+      case "Lunch":
+        setCurrentCategory("Dessert");
+        break;
+      case "Dessert":
+        setCurrentCategory("Drinks");
+        break;
+      case "Drinks":
+        setCurrentCategory("AllCategory");
+        break;
+      default:
+        setCurrentCategory("AllCategory");
+    }
+  };
+
+  const navigate = useNavigate;
+  return <></>;
+};
+
+const DinnerData = [
+  {
+    id: 1,
+    name: "Rice",
+    price: "$" + 23,
+    description: "sbdhfiusdyfiusfkjs",
+  },
+
+  {
+    id: 1,
+    name: "Jollof",
+    price: "$" + 23,
+    description: "sbdhfiusdyfiusfkjs",
+  },
+
+  {
+    id: 1,
+    name: "Jollof",
+    price: "$" + 23,
+    description: "sbdhfiusdyfiusfkjs",
+  },
+
+  {
+    id: 1,
+    name: "Jollof",
+    price: "$" + 23,
+    description: "sbdhfiusdyfiusfkjs",
+  },
+
+  {
+    id: 1,
+    name: "Jollof",
+    price: "$" + 23,
+    description: "sbdhfiusdyfiusfkjs",
+  },
+
+  {
+    id: 1,
+    name: "Jollof",
+    price: "$" + 23,
+    description: "sbdhfiusdyfiusfkjs",
+  },
+];
 
 export default HomepagePage;

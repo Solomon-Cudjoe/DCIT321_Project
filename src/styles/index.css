@@ -84,6 +84,132 @@ body {
   cursor: pointer;
 }
 
+body footer{
+  display: block;
+  width: 100%;
+  height: 10%;
+  gap: 3;
+  background-color: #000;
+}
+
+
+.class{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;  
+  margin: auto;
+}
+
+.FoodItems{
+  display: flex;
+  margin: auto;
+}
+
+
+.Container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.Container img{
+  width: 20rem;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+}
+.item-container{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20rem;
+  height: 30rem;
+  margin: 30px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+.RatingBar{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.item-container .name{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.item-container .price{
+  font-size: 25px;
+}
+
+.Heading{
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+#heading-span{
+  text-transform: capitalize;
+}
+
+.main-headings{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: brown;
+  
+}
+
+.cat-heading{
+  font-size: 3rem;
+  font-weight: 500;
+  color: brown;
+}
+
+.switch-btn{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  margin: auto;
+  height: 3rem;
+  width: 8rem;
+  border: none;
+  border-radius: 10px;
+  background-color: brown;
+}
+
+#popular-heading{
+  font-size: 5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+#popular-heading span{
+  color: brown;
+}
+
+
+
 /* .form-input{
   display: block;
   justify-content: center;

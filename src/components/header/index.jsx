@@ -2,23 +2,10 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import {
-  Button,
-  Img,
-  Line,
-  List,
-  PagerIndicator,
-  RatingBar,
-  Slider,
-  Text,
-} from "components";
-import Footer from "components/Footer";
+import { Button, Img, Line, Text } from "components";
 
 const HomepagePage = () => {
   const navigate = useNavigate();
-
-  const sliderRef = React.useRef(null);
-  const [sliderState, setsliderState] = React.useState(0);
 
   return (
     <>
@@ -50,7 +37,6 @@ const HomepagePage = () => {
                     >
                       Home
                     </Text>
-                    <Line className="bg-red-400 h-px w-full" />
                   </div>
 
                   <div className="flex flex-col items-center justify-start ml-8">
@@ -132,10 +118,6 @@ const HomepagePage = () => {
             </header>
           </div>
         </div>
-
-        <div className="flex flex-col font-opensans gap-[50px] items-center justify-start mt-[120px] pt-4 md:px-5 w-[55%] md:w-full"></div>
-        <div className="bg-red-100 flex flex-col font-opensans items-center justify-end max-w-[1112px] mt-[120px] mx-auto p-[93px] md:px-5 rounded-[24px] w-full"></div>
-        <Footer className="bg-gray-901 flex font-poppins items-center justify-center mt-[120px] md:px-5 w-full" />
       </div>
     </>
   );

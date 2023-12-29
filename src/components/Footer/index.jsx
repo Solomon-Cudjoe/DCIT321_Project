@@ -8,7 +8,7 @@ const Footer = (props) => {
   const navigate = useNavigate(); // Initialize useNavigate
   return (
     <>
-      <footer className={props.className}>
+      <footer className="footer">
         <div className="flex flex-col md:gap-10 gap-[67px] items-center justify-center mb-[76px] mt-[70px] mx-auto w-[78%]">
           <div className="flex md:flex-col flex-row md:gap-5 items-start justify-evenly w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start mb-2 w-[38%] md:w-full">
@@ -153,7 +153,7 @@ const Footer = (props) => {
                 Get in touch
               </Text>
               <Text
-                className="leading-[153.00%] mt-[46px] text-gray-300 text-xl w-full"
+                className="leading-[153.00%] mt-[46px] text-white text-xl w-full"
                 size="txtPoppinsRegular20Gray300"
               >
                 3247 Johnson Ave, Bronx, NY 10463, Amerika Serikat
@@ -172,6 +172,10 @@ const Footer = (props) => {
               </Text>
             </div>
           </div>
+<<<<<<< HEAD
+          <div className="copyRigt">
+            <p>&copy; 2023</p>
+=======
           <div className="flex flex-row items-start justify-center w-[23%] md:w-full">
             <Text
               className="mt-1 text-gray-301 text-xl"
@@ -193,6 +197,7 @@ const Footer = (props) => {
             >
               ByteForce
             </Text>
+>>>>>>> a24cbbc0cf2bed37a671018f570c63a196fa584e
           </div>
         </div>
       </footer>
