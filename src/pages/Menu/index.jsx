@@ -193,7 +193,7 @@ const MenuPage = () => {
                             className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                             size="txtPoppinsSemiBold25"
                           >
-                            $12.05
+                            GHc35.00
                           </Text>
                           <Button
                             className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -244,7 +244,7 @@ const MenuPage = () => {
                             className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                             size="txtPoppinsSemiBold25"
                           >
-                            $12.05
+                            GHc35.00
                           </Text>
                           <Button
                             className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -295,7 +295,7 @@ const MenuPage = () => {
                             className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                             size="txtPoppinsSemiBold25"
                           >
-                            $12.05
+                            GHc35.99
                           </Text>
                           <Button
                             className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -346,7 +346,7 @@ const MenuPage = () => {
                             className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                             size="txtPoppinsSemiBold25"
                           >
-                            $12.05
+                            GHc38.90
                           </Text>
                           <Button
                             className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -372,7 +372,7 @@ const MenuPage = () => {
                             className="text-3xl sm:text-[26px] md:text-[28px] text-gray-900"
                             size="txtPoppinsSemiBold30"
                           >
-                            Risoto
+                            Pepperoni Pizza
                           </Text>
                           <Text
                             className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
@@ -397,7 +397,7 @@ const MenuPage = () => {
                             className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                             size="txtPoppinsSemiBold25"
                           >
-                            $12.05
+                            GHc35.00
                           </Text>
                           <Button
                             className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
@@ -423,7 +423,7 @@ const MenuPage = () => {
                             className="text-3xl sm:text-[26px] md:text-[28px] text-gray-900"
                             size="txtPoppinsSemiBold30"
                           >
-                            Splitza Signature
+                            Vegan Pizza
                           </Text>
                           <Text
                             className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
@@ -448,7 +448,7 @@ const MenuPage = () => {
                             className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                             size="txtPoppinsSemiBold25"
                           >
-                            $12.05
+                            GHc55.00
                           </Text>
                           <Button
                             className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"

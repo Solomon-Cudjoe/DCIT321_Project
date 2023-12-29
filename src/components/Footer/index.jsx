@@ -1,8 +1,11 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { Button, Img, Text } from "components";
 
 const Footer = (props) => {
+  const navigate = useNavigate(); // Initialize useNavigate
   return (
     <>
       <footer className="footer">
@@ -92,6 +95,7 @@ const Footer = (props) => {
               </Text>
               <Text
                 className="mt-[35px] text-gray-300 text-xl"
+                onClick={() => navigate("/Homepage")}
                 size="txtPoppinsRegular20Gray300"
               >
                 Menu
@@ -158,18 +162,42 @@ const Footer = (props) => {
                 className="mt-[31px] text-gray-300 text-xl"
                 size="txtPoppinsRegular20Gray300"
               >
-                delizioso@gmail.com
+                lottemarie77@gmail.com
               </Text>
               <Text
                 className="mt-8 text-gray-300 text-xl"
                 size="txtPoppinsRegular20Gray300"
               >
-                +123 4567 8901
+                +233549684848
               </Text>
             </div>
           </div>
+<<<<<<< HEAD
           <div className="copyRigt">
             <p>&copy; 2023</p>
+=======
+          <div className="flex flex-row items-start justify-center w-[23%] md:w-full">
+            <Text
+              className="mt-1 text-gray-301 text-xl"
+              size="txtPoppinsRegular20Gray301"
+            >
+              Developed 
+            </Text>
+            " "
+            <Text
+              className="mt-1 text-gray-301 text-xl"
+              size="txtPoppinsRegular20Gray301"
+            >
+              by
+            </Text>
+            " "
+            <Text
+              className="ml-[5px] text-gray-301 text-xl"
+              size="txtPoppinsRegular20Gray301"
+            >
+              ByteForce
+            </Text>
+>>>>>>> a24cbbc0cf2bed37a671018f570c63a196fa584e
           </div>
         </div>
       </footer>
