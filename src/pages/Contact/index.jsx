@@ -47,7 +47,8 @@ const ContactPage = () => {
                   About us
                 </Text>
               </div>
-              <div className="flex flex-col items-center justify-start sm:ml-[0] ml-[31px]">
+
+             {/*} <div className="flex flex-col items-center justify-start sm:ml-[0] ml-[31px]">
                 <Text
                   className="common-pointer text-base text-gray-900_cc"
                   size="txtOpenSansRomanRegular16Gray900cc"
@@ -55,7 +56,9 @@ const ContactPage = () => {
                 >
                   Order online
                 </Text>
-              </div>
+              </div>*/}
+
+
               <div className="flex flex-col items-center justify-start sm:ml-[0] ml-[27px]">
                 <Text
                   className="common-pointer text-base text-gray-900_cc"

@@ -16,9 +16,9 @@ const timeOptionsList = [
   { label: "Option3", value: "option3" },
 ];
 const partysizeOptionsList = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
+  { label: "30 people or less", value: "30 people or less" },
+  { label: "35 to 50 people", value: "35 to 50 people" },
+  { label: "55 to 100 people", value: "55 to 100 people" },
 ];
 
 const ReservationPage = () => {
@@ -63,7 +63,8 @@ const ReservationPage = () => {
                   About us
                 </Text>
               </div>
-              <div className="flex flex-col items-center justify-start sm:ml-[0] ml-[31px]">
+              
+              {/*<div className="flex flex-col items-center justify-start sm:ml-[0] ml-[31px]">
                 <Text
                   className="common-pointer text-base text-gray-900_cc"
                   size="txtOpenSansRomanRegular16Gray900cc"
@@ -71,7 +72,9 @@ const ReservationPage = () => {
                 >
                   Order online
                 </Text>
-              </div>
+              </div>*/}
+
+
               <div className="flex flex-col gap-1.5 items-start justify-start sm:ml-[0] ml-[27px] w-[16%] sm:w-full">
                 <Text
                   className="text-base text-red-400"

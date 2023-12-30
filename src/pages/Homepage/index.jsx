@@ -21,7 +21,7 @@ const HomepagePage = () => {
   const sliderRef = React.useRef(null);
   const [sliderState, setsliderState] = React.useState(0);
 
-  const MenuSwitcher = () => {
+ {/* const MenuSwitcher = () => {
     const [currentCategory, setCurrentCategory] = useState("All Categories");
 
     const switchMenu = () => {
@@ -1087,7 +1087,7 @@ const HomepagePage = () => {
         </button>
       </div>
     );
-  };
+  };*/}
 
   return (
     <>
@@ -1141,7 +1141,7 @@ const HomepagePage = () => {
                     </Text>
                   </div>
 
-                  <div className="flex flex-col items-center justify-start ml-[31px]">
+                  {/*<div className="flex flex-col items-center justify-start ml-[31px]">
                     <Text
                       className="common-pointer text-base text-gray-900_cc"
                       size="txtOpenSansRomanRegular16Gray900cc"
@@ -1149,7 +1149,7 @@ const HomepagePage = () => {
                     >
                       Order online
                     </Text>
-                  </div>
+                  </div>*/}
 
                   <div className="flex flex-col items-center justify-start ml-[27px]">
                     <Text
@@ -1219,7 +1219,7 @@ const HomepagePage = () => {
                       </span>
                     </Text>
                     <Text
-                      className="leading-[200.00%] text-gray-802 text-xl w-[91%] sm:w-full"
+                      className="leading-[200.00%] text-justify text-gray-802 text-xl w-[91%] sm:w-full"
                       size="txtPoppinsRegular20Gray802"
                     >
                       We provide best food in town, we provide home delivery and
@@ -1263,7 +1263,7 @@ const HomepagePage = () => {
             <div className="md:h-[558px] h-[646px] relative w-3/5 md:w-full">
               <Img
                 className="absolute h-[558px] inset-y-[0] left-[4%] my-auto object-cover w-[85%]"
-                src="images/img_kindpng3443995.png"
+                src={require("FoodImages/Beef_jollof_dinner.jpg")}
                 alt="kindpng3443995"
               />
               <Img
@@ -1299,12 +1299,11 @@ const HomepagePage = () => {
                   </span>
                 </Text>
                 <Text
-                  className="leading-[200.00%] text-gray-801 text-xl w-full"
+                  className="leading-[200.00%] text-justify text-gray-801 text-xl w-full"
                   size="txtPoppinsRegular20"
                 >
-                  This dish is full of flavor and nutrition! Quinoa is a
-                  complete protein, providing all the essential amino acids your
-                  body needs, and is also a good source of fiber.
+                  This dish is full of flavor and nutrition! Beef Jollof is a complete meal, providing all the essential nutrients your
+                  body needs, and is also a good source of fiber. It comes with an Egg, Coleslaw, Special Sauce, and Green or Black Pepper Sauce
                 </Text>
               </div>
               <Button
@@ -1336,33 +1335,41 @@ const HomepagePage = () => {
                 color="red_400"
                 size="lg"
                 variant="fill"
+                onClick={() => navigate("/menu")}
               >
                 All catagory
               </Button>
+
               <Button
                 className="cursor-pointer min-w-[192px] text-center text-xl"
                 shape="round"
                 color="gray_400_63"
                 size="lg"
                 variant="fill"
-              >
-                Dinner
-              </Button>
-              <Button
-                className="cursor-pointer min-w-[192px] text-center text-xl"
-                shape="round"
-                color="gray_400_63"
-                size="lg"
-                variant="fill"
+                onClick={() => navigate("/lunch")}
               >
                 Lunch
               </Button>
+
               <Button
                 className="cursor-pointer min-w-[192px] text-center text-xl"
                 shape="round"
                 color="gray_400_63"
                 size="lg"
                 variant="fill"
+                onClick={() => navigate("/dinner")}
+              >
+                Dinner
+              </Button>
+
+
+              <Button
+                className="cursor-pointer min-w-[192px] text-center text-xl"
+                shape="round"
+                color="gray_400_63"
+                size="lg"
+                variant="fill"
+                onClick={() => navigate("/dessert")}
               >
                 Dessert
               </Button>
@@ -1372,6 +1379,7 @@ const HomepagePage = () => {
                 color="gray_400_63"
                 size="lg"
                 variant="fill"
+                onClick={() => navigate("/drink")}
               >
                 Drink
               </Button>
@@ -1379,26 +1387,27 @@ const HomepagePage = () => {
             <div className="flex flex-col gap-12 items-center justify-start w-full">
               <div className="flex flex-col items-center justify-start rounded-[40px] w-full">
                 <div className="md:gap-5 gap-[35px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center min-h-[auto] w-full">
+                  
+                  
                   <div className="bg-white-A700 flex flex-1 flex-col gap-6 items-center justify-center p-[30px] sm:px-5 rounded-[40px] w-full">
                     <Img
                       className="h-[270px] md:h-auto mt-1.5 object-cover w-[270px]"
-                      src="images/img_pngitem41084.png"
-                      alt="PngItem41084"
+                      src={require("FoodImages/oil-rice_Dinner.jpg")}
+                      alt=""
                     />
-                    <div className="flex flex-col items-center justify-end mb-1.5 pt-[17px] w-full">
-                      <div className="flex flex-col gap-[18px] items-center justify-start w-full">
+                    <div className="flex flex-col items-center justify-end mb-1.5 pt-3.5 w-full">
+                      <div className="flex flex-col gap-[23px] items-center justify-start w-full">
                         <Text
-                          className="text-3xl sm:text-[26px] md:text-[28px] text-gray-900"
+                          className="text-3xl sm:text-[26px] md:text-[28px] text-center text-gray-900"
                           size="txtPoppinsSemiBold30"
                         >
-                          Spaghetti
+                          Sausage Oil Rice
                         </Text>
                         <Text
-                          className="leading-[200.00%] text-center text-gray-800 text-sm w-full"
+                          className="leading-[200.00%] text-justify text-gray-800 text-sm w-full"
                           size="txtPoppinsRegular14"
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Egestas consequat mi eget auctor aliquam, diam.{" "}
+                          Comes with a sausage, egg, salad, avocado pear, minced meat and red pepper. {" "}
                         </Text>
                       </div>
                       <div className="flex flex-row items-center justify-center mt-3.5 rounded-[1.76px] w-[49%] md:w-full">
@@ -1415,11 +1424,11 @@ const HomepagePage = () => {
                           className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
                           size="txtPoppinsSemiBold25"
                         >
-                          $12.05
+                          GHc40.00
                         </Text>
                         <Button
                           className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
-                          onClick={() => navigate("/checkout")}
+                          onClick={() => navigate("/login")}
                           color="red_400"
                           size="md"
                           variant="fill"
@@ -1429,6 +1438,9 @@ const HomepagePage = () => {
                       </div>
                     </div>
                   </div>
+
+
+
                   <div className="bg-white-A700 flex flex-1 flex-col gap-6 items-center justify-center p-[30px] sm:px-5 rounded-[40px] w-full">
                     <Img
                       className="h-[270px] md:h-auto mt-1.5 object-cover w-[270px]"
@@ -1678,52 +1690,76 @@ const HomepagePage = () => {
                   </div>
                 </div>
               </div>
+
+
+
               <div className="flex flex-row font-inter gap-2.5 items-center justify-center w-1/5 md:w-full">
-                <Img
+                {/*<Img
                   className="h-[15px] w-[15px]"
                   src="images/img_arrowleft_black_900.svg"
                   alt="arrowleft"
-                />
-                <div className="flex flex-row gap-2.5 items-center justify-start w-[78%]">
-                  <Button
+                />*/}
+
+                <div className="flex flex-row gap-2.5 items-center justify-center w-[78%]">
+                  {/*<Button
                     className="cursor-pointer font-semibold h-[35px] leading-[normal] rounded text-center text-sm tracking-[-0.50px] w-[35px]"
                     color="gray_900"
                     size="xs"
                     variant="fill"
+                    onClick={() => navigate("/menu")}
                   >
                     1
-                  </Button>
-                  <Button
+                  </Button>*/}
+
+                  {/*<Button
                     className="cursor-pointer font-semibold h-[35px] leading-[normal] rounded text-center text-sm tracking-[-0.50px] w-[35px]"
                     color="gray_200"
                     size="xs"
                     variant="fill"
                   >
                     2
-                  </Button>
-                  <Button
+                  </Button>*/}
+
+                  {/*<Button
                     className="cursor-pointer font-semibold h-[35px] leading-[normal] rounded text-center text-sm tracking-[-0.50px] w-[35px]"
                     color="gray_200"
                     size="xs"
                     variant="fill"
+                    onClick={() => navigate("/menu")}
                   >
                     3
-                  </Button>
+                  </Button>*/}
+
                   <Button
-                    className="flex h-[35px] items-center justify-center rounded w-[35px]"
+                    className="common-pointer cursor-pointer font-semibold min-w-[158px] rounded-lg text-base text-center"
+                    onClick={() => navigate("/menu")}
+                    color="red_400"
+                    size="md"
+                    variant="fill"
+                  >
+                    View More
+                  </Button>
+
+                  {/*<Button
+                    className="cursor-pointer font-semibold h-[35px] leading-[normal] rounded text-center text-sm tracking-[-0.50px] w-[35px]"
                     color="gray_200"
                     size="xs"
                     variant="fill"
+                    onClick={() => navigate("/menu")}
                   >
-                    <Img className="h-5" src="images/img_user.svg" alt="user" />
-                  </Button>
+                    View More
+                  </Button>*/}
+
                 </div>
-                <Img
-                  className="h-[15px] w-[15px]"
+                {/*<Img
+                  className="h-[15px] w-[15px] cursor-pointer"
                   src="images/img_arrowright.svg"
                   alt="arrowright"
-                />
+                  onClick={() => navigate("/menu")}
+                />*/}
               </div>
+
+
             </div>
           </div>
         </div>

@@ -58,7 +58,7 @@ const HomepagePage = () => {
                     </Text>
                   </div>
 
-                  <div className="flex flex-col items-center justify-start ml-[31px]">
+                  {/*<div className="flex flex-col items-center justify-start ml-[31px]">
                     <Text
                       className="common-pointer text-base text-gray-900_cc"
                       size="txtOpenSansRomanRegular16Gray900cc"
@@ -66,7 +66,7 @@ const HomepagePage = () => {
                     >
                       Order online
                     </Text>
-                  </div>
+                  </div>*/}
 
                   <div className="flex flex-col items-center justify-start ml-[27px]">
                     <Text

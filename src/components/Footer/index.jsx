@@ -100,12 +100,14 @@ const Footer = (props) => {
               >
                 Menu
               </Text>
-              <Text
+
+              {/*<Text
                 className="mt-[34px] text-gray-300 text-xl"
                 size="txtPoppinsRegular20Gray300"
               >
                 Order online
-              </Text>
+              </Text>*/}
+
               <Text
                 className="mt-[37px] text-gray-300 text-xl"
                 size="txtPoppinsRegular20Gray300"
@@ -172,10 +174,6 @@ const Footer = (props) => {
               </Text>
             </div>
           </div>
-<<<<<<< HEAD
-          <div className="copyRigt">
-            <p>&copy; 2023</p>
-=======
           <div className="flex flex-row items-start justify-center w-[23%] md:w-full">
             <Text
               className="mt-1 text-gray-301 text-xl"
@@ -197,7 +195,6 @@ const Footer = (props) => {
             >
               ByteForce
             </Text>
->>>>>>> a24cbbc0cf2bed37a671018f570c63a196fa584e
           </div>
         </div>
       </footer>
