@@ -80,7 +80,7 @@ const Footer = (props) => {
                 </Button>
               </div>
             </div>
-            <div className="flex flex-col items-start justify-start md:mt-0 mt-4">
+            <div className="flex flex-col items-start justify-start md:mt-0 mt-[4px]">
               <Text
                 className="sm:text-[21px] md:text-[23px] text-[25px] text-red-400"
                 size="txtPoppinsSemiBold25Red400"
@@ -121,7 +121,7 @@ const Footer = (props) => {
                 Reservation
               </Text>
             </div>
-            <div className="flex flex-col items-start justify-start md:mt-0 mt-[11px]">
+            <div className="flex flex-col items-start justify-start md:mt-0 mt-[4px]">
               <Text
                 className="sm:text-[21px] md:text-[23px] text-[25px] text-red-400"
                 size="txtPoppinsSemiBold25Red400"
@@ -147,7 +147,7 @@ const Footer = (props) => {
                 Event
               </Text>
             </div>
-            <div className="flex flex-col items-start justify-start md:mt-0 mt-[11px]">
+            <div className="flex flex-col items-start justify-start md:mt-0 mt-[4px]">
               <Text
                 className="sm:text-[21px] md:text-[23px] text-[25px] text-red-400"
                 size="txtPoppinsSemiBold25Red400"
@@ -167,7 +167,7 @@ const Footer = (props) => {
                 lottemarie77@gmail.com
               </Text>
               <Text
-                className="mt-8 text-gray-300 text-xl"
+                className="mt-[8px] text-gray-300 text-xl"
                 size="txtPoppinsRegular20Gray300"
               >
                 +233549684848
@@ -176,21 +176,21 @@ const Footer = (props) => {
           </div>
           <div className="flex flex-row items-start justify-center w-[23%] md:w-full">
             <Text
-              className="mt-1 text-gray-301 text-xl"
+              className="mt-[1px] text-gray-301 text-xl"
               size="txtPoppinsRegular20Gray301"
             >
               Developed 
             </Text>
             " "
             <Text
-              className="mt-1 text-gray-301 text-xl"
+              className="mt-[1px] text-gray-301 text-xl"
               size="txtPoppinsRegular20Gray301"
             >
               by
             </Text>
             " "
             <Text
-              className="ml-[5px] text-gray-301 text-xl"
+              className="ml-[1px] text-gray-301 text-xl"
               size="txtPoppinsRegular20Gray301"
             >
               ByteForce
