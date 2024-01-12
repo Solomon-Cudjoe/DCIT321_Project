@@ -9,7 +9,6 @@ import Drink from "pages/Categories/drink";
 import Dessert from "pages/Categories/dessert.";
 const Homepage = React.lazy(() => import("pages/Homepage"));
 const Checkout = React.lazy(() => import("pages/Checkout"));
-const Orderonline = React.lazy(() => import("pages/Orderonline"));
 const Contact = React.lazy(() => import("pages/Contact"));
 const Reservation = React.lazy(() => import("pages/Reservation"));
 const Aboutus = React.lazy(() => import("pages/Aboutus"));
@@ -25,7 +24,6 @@ const ProjectRoutes = () => {
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/reservation" element={<Reservation />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/orderonline" element={<Orderonline />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/" element={<Homepage />} />
           <Route path="/register" element={<Register />} />
